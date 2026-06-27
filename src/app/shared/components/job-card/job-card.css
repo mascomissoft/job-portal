@@ -1,0 +1,20 @@
+.job-card {
+  background: white;
+  border-left: 5px solid #ccc;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.job-card.active { border-left-color: #10b981; }  /* Green */
+.job-card.draft { border-left-color: #f59e0b; }   /* Yellow */
+.job-card.closed { border-left-color: #ef4444; }  /* Red */
+
+.job-header { display: flex; justify-content: space-between; align-items: center; }
+.job-header h3 { margin: 0; font-size: 16px; color: #1e293b; }
+.badge { font-size: 11px; padding: 4px 8px; border-radius: 12px; font-weight: bold; background: #e2e8f0; }
+.dept, .count { margin: 0; font-size: 14px; color: #64748b; }
+.job-actions { margin-top: 8px; text-align: right; }
+.btn-view { background: #3b82f6; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; }

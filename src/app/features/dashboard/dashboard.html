@@ -1,0 +1,33 @@
+<div class="dashboard-wrapper">
+  <h2>Job Management Dashboard</h2>
+  <p class="subtitle">Teaching point: One component used in 3 different lists dynamically.</p>
+
+  <div class="columns-grid">
+    <div class="column-box">
+      <div class="column-header active-title">🟢 Active Jobs ({{ activeJobs.length }})</div>
+      <div class="list-container">
+        @for (job of activeJobs; track job.id) {
+          <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card>
+        }
+      </div>
+    </div>
+
+    <div class="column-box">
+      <div class="column-header draft-title">🟡 Drafts ({{ draftJobs.length }})</div>
+      <div class="list-container">
+        @for (job of draftJobs; track job.id) {
+          <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card>
+        }
+      </div>
+    </div>
+
+    <div class="column-box">
+      <div class="column-header closed-title">🔴 Closed ({{ closedJobs.length }})</div>
+      <div class="list-container">
+        @for (job of closedJobs; track job.id) {
+          <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card>
+        }
+      </div>
+    </div>
+  </div>
+</div>

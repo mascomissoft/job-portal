@@ -1,0 +1,23 @@
+<div class="admin-wrapper">
+  <!-- বাম পাশে সাইডবার -->
+  <aside class="sidebar">
+    <div class="logo">Masco Portal</div>
+    <nav>
+      <a routerLink="/admin/dashboard" routerLinkActive="active">📊 Dashboard</a>
+      <a routerLink="/admin/profile" routerLinkActive="active">👤 Profile</a>
+      <a routerLink="/login" class="logout">🚪 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- ডান পাশে মেইন কন্টেন্ট এরিয়া -->
+  <div class="main-content">
+    <header class="admin-navbar">
+      <span>Welcome, Admin</span>
+    </header>
+    
+    <!-- চাইল্ড রুটগুলো (Dashboard, Profile) এখানেই লোড হবে -->
+    <main class="page-body">
+      <router-outlet />
+    </main>
+  </div>
+</div>

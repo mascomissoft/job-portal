@@ -2,11 +2,12 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": "5aed5cf0-1e83-4c27-b0a5-45a177077b02"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "component-separation": {
+    "masco-job-portal": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -64,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "component-separation:build:production"
+              "buildTarget": "masco-job-portal:build:production"
             },
             "development": {
-              "buildTarget": "component-separation:build:development"
+              "buildTarget": "masco-job-portal:build:development"
             }
           },
           "defaultConfiguration": "development"

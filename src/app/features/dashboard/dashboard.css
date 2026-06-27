@@ -1,0 +1,10 @@
+.dashboard-wrapper { padding: 10px; }
+.subtitle { color: #64748b; font-size: 14px; margin-bottom: 20px; }
+.columns-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.column-box { background: #f1f5f9; padding: 16px; border-radius: 8px; min-height: 400px; }
+.column-header { font-weight: bold; font-size: 16px; margin-bottom: 15px; padding-bottom: 8px; border-bottom: 2px solid #cbd5e1; }
+.list-container { display: flex; flex-direction: column; gap: 12px; }
+
+.active-title { color: #059669; }
+.draft-title { color: #d97706; }
+.closed-title { color: #dc2626; }

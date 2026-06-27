@@ -1,0 +1,12 @@
+<div class="job-card" [ngClass]="job.status">
+  <div class="job-header">
+    <h3>{{ job.title }}</h3>
+    <span class="badge">{{ job.status | uppercase }}</span>
+  </div>
+  <p class="dept">🏢 Department: {{ job.department }}</p>
+  <p class="count">👥 Applicants: <strong>{{ job.applicants }}</strong></p>
+  
+  <div class="job-actions">
+    <button class="btn-view" (click)="viewDetails.emit(job.id)">View Details</button>
+  </div>
+</div>
