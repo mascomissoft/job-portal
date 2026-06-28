@@ -1,0 +1,55 @@
+button {
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📐 Button Sizes */
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.btn-medium {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.btn-large {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 🔵 Primary (Masco Theme Blue) */
+.btn-primary { background-color: #3b82f6; color: white; }
+.btn-primary:hover:not(:disabled) { background-color: #2563eb; }
+
+/* ⚪ Secondary */
+.btn-secondary { background-color: #e2e8f0; color: #334155; }
+.btn-secondary:hover:not(:disabled) { background-color: #cbd5e1; }
+
+/* 🔴 Danger (Delete/Alert) */
+.btn-danger { background-color: #ef4444; color: white; }
+.btn-danger:hover:not(:disabled) { background-color: #dc2626; }
+
+/* 🟡 Draft (Pending/Save for later) */
+.btn-draft { background-color: #f59e0b; color: white; }
+.btn-draft:hover:not(:disabled) { background-color: #d97706; }
+
+/* 🟢 Success (Approve/Complete) */
+.btn-success { background-color: #10b981; color: white; }
+.btn-success:hover:not(:disabled) { background-color: #059669; }
+.w-full {
+  width: 100%;
+  display: flex;
+}

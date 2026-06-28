@@ -1,5 +1,6 @@
 import { NgClass, UpperCasePipe } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { UiButton } from '../ui-button/ui-button';
 
 export interface Job {
   id: number;
@@ -12,7 +13,7 @@ export interface Job {
 @Component({
   selector: 'app-job-card',
   standalone: true,
-  imports: [NgClass, UpperCasePipe],
+  imports: [NgClass, UpperCasePipe, UiButton],
   templateUrl: './job-card.html',
   styleUrl: './job-card.css',
 })

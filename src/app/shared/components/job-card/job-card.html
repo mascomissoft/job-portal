@@ -7,6 +7,13 @@
   <p class="count">👥 Applicants: <strong>{{ job.applicants }}</strong></p>
   
   <div class="job-actions">
-    <button class="btn-view" (click)="viewDetails.emit(job.id)">View Details</button>
+    <app-ui-button 
+        text="View Details" 
+        variant="draft" 
+        type="submit"
+        size="small"
+        (click)="viewDetails.emit(job.id)"
+      >
+      </app-ui-button>
   </div>
 </div>

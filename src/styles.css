@@ -1,3 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+/* :root {
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+
+
+  --color-secondary: #e2e8f0;
+  --color-secondary-hover: #cbd5e1;
+  --color-secondary-text: #334155;
+
+
+  --color-danger: #ef4444;
+  --color-danger-hover: #dc2626;
+
+
+  --color-draft: #f59e0b;
+  --color-draft-hover: #d97706;
+
+
+  --color-success: #10b981;
+  --color-success-hover: #059669;
+} */

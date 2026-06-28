@@ -1,0 +1,7 @@
+<button 
+  [type]="type" 
+  [disabled]="disabled"
+  [ngClass]="[ 'btn-' + variant, 'btn-' + size, fullWidth ? 'w-full' : '' ]"
+  (click)="onClick($event)">
+  {{ text }}
+</button>
