@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
 import { Job, JobCard } from '../../shared/components/job-card/job-card';
+import { NgClass, UpperCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [JobCard],
+  imports: [
+   // JobCard, 
+    NgClass, 
+    UpperCasePipe
+  ],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

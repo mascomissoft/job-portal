@@ -8,3 +8,100 @@
 .active-title { color: #059669; }
 .draft-title { color: #d97706; }
 .closed-title { color: #dc2626; }
+
+
+
+
+
+
+
+
+
+
+
+
+.job-card {
+  background: white;
+  border-left: 5px solid #ccc;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.job-card.active { border-left-color: #10b981; }  /* Green */
+.job-card.draft { border-left-color: #f59e0b; }   /* Yellow */
+.job-card.closed { border-left-color: #ef4444; }  /* Red */
+
+.job-header { display: flex; justify-content: space-between; align-items: center; }
+.job-header h3 { margin: 0; font-size: 16px; color: #1e293b; }
+.badge { font-size: 11px; padding: 4px 8px; border-radius: 12px; font-weight: bold; background: #e2e8f0; }
+.dept, .count { margin: 0; font-size: 14px; color: #64748b; }
+.job-actions { margin-top: 8px; text-align: right; }
+.btn-view { background: #3b82f6; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; }
+
+
+
+
+
+
+
+
+
+
+button {
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📐 Button Sizes */
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.btn-medium {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.btn-large {
+  padding: 14px 28px;
+  font-size: 16px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 🔵 Primary (Masco Theme Blue) */
+.btn-primary { background-color: #3b82f6; color: white; }
+.btn-primary:hover:not(:disabled) { background-color: #2563eb; }
+
+/* ⚪ Secondary */
+.btn-secondary { background-color: #e2e8f0; color: #334155; }
+.btn-secondary:hover:not(:disabled) { background-color: #cbd5e1; }
+
+/* 🔴 Danger (Delete/Alert) */
+.btn-danger { background-color: #ef4444; color: white; }
+.btn-danger:hover:not(:disabled) { background-color: #dc2626; }
+
+/* 🟡 Draft (Pending/Save for later) */
+.btn-draft { background-color: #f59e0b; color: white; }
+.btn-draft:hover:not(:disabled) { background-color: #d97706; }
+
+/* 🟢 Success (Approve/Complete) */
+.btn-success { background-color: #10b981; color: white; }
+.btn-success:hover:not(:disabled) { background-color: #059669; }
+.w-full {
+  width: 100%;
+  display: flex;
+}

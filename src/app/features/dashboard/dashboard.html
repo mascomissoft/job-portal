@@ -7,7 +7,22 @@
       <div class="column-header active-title">🟢 Active Jobs ({{ activeJobs.length }})</div>
       <div class="list-container">
         @for (job of activeJobs; track job.id) {
-          <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card>
+        <!-- <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card> -->
+        <div class="job-card" [ngClass]="job.status">
+          <div class="job-header">
+            <h3>{{ job.title }}</h3>
+            <span class="badge">{{ job.status | uppercase }}</span>
+          </div>
+          <p class="dept">🏢 Department: {{ job.department }}</p>
+          <p class="count">👥 Applicants: <strong>{{ job.applicants }}</strong></p>
+
+          <div class="job-actions">
+            <!-- <app-ui-button text="View Details" variant="draft" type="submit" size="small"
+              (click)="viewDetails.emit(job.id)">
+            </app-ui-button> -->
+            <button class='btn-draft btn-medium'>View details</button>
+          </div>
+        </div>
         }
       </div>
     </div>
@@ -16,7 +31,22 @@
       <div class="column-header draft-title">🟡 Drafts ({{ draftJobs.length }})</div>
       <div class="list-container">
         @for (job of draftJobs; track job.id) {
-          <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card>
+        <!-- <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card> -->
+         <div class="job-card" [ngClass]="job.status">
+          <div class="job-header">
+            <h3>{{ job.title }}</h3>
+            <span class="badge">{{ job.status | uppercase }}</span>
+          </div>
+          <p class="dept">🏢 Department: {{ job.department }}</p>
+          <p class="count">👥 Applicants: <strong>{{ job.applicants }}</strong></p>
+
+          <div class="job-actions">
+            <!-- <app-ui-button text="View Details" variant="draft" type="submit" size="small"
+              (click)="viewDetails.emit(job.id)">
+            </app-ui-button> -->
+            <button class='btn-draft btn-medium'>View details</button>
+          </div>
+        </div>
         }
       </div>
     </div>
@@ -25,7 +55,22 @@
       <div class="column-header closed-title">🔴 Closed ({{ closedJobs.length }})</div>
       <div class="list-container">
         @for (job of closedJobs; track job.id) {
-          <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card>
+        <!-- <app-job-card [job]="job" (viewDetails)="handleViewDetails($event)"></app-job-card> -->
+         <div class="job-card" [ngClass]="job.status">
+          <div class="job-header">
+            <h3>{{ job.title }}</h3>
+            <span class="badge">{{ job.status | uppercase }}</span>
+          </div>
+          <p class="dept">🏢 Department: {{ job.department }}</p>
+          <p class="count">👥 Applicants: <strong>{{ job.applicants }}</strong></p>
+
+          <div class="job-actions">
+            <!-- <app-ui-button text="View Details" variant="draft" type="submit" size="small"
+              (click)="viewDetails.emit(job.id)">
+            </app-ui-button> -->
+            <button class='btn-draft btn-medium'>View details</button>
+          </div>
+        </div>
         }
       </div>
     </div>
